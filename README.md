@@ -6,6 +6,16 @@ This is a repo that teaches you how to perform React app optimization. The core 
 
 - Demonstrate how lodash debounce helps on some necessary event that fires frequently
   - useMouse.js
+- Demonstrate how react-window helps on long list
+  - NewsCard.js
+- Treeshaking
+  - There is something you can do while there is something you should leave with your bundler (webpack / parcel). For example, in `useMouse.js`, you can import lodash as below
+  - Look into the bundler and ignore transpiling modules to CommonJS
+  - Add sideEffect to your modules (for webpack) if needed
+  - Use `import debounce from 'lodash/debounce';` instead of `import { debounce } from 'lodash';`
+- Use case of BundlerAnalyzerPlugin (inside `webpack.config.js`)
+- Containerization of state within child component
+  - We should manage the child component's internal state inside the component itself but not put it into the parent component. Otherwise, when the parent component is re-rendered, all of the child component will be re-rendered as well. Prioritize this approach before you try to use `React.Memo()`
 
 ## Prerequisites
 
