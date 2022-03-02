@@ -3,8 +3,8 @@
 const fs = require("fs");
 const path = require("path");
 const webpack = require("webpack");
+// Uncomment below to see how BundleAnalyzerPlugin works
 // const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
-//   .BundleAnalyzerPlugin;
 const resolve = require("resolve");
 const PnpWebpackPlugin = require("pnp-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
