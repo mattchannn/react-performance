@@ -58,6 +58,7 @@ const NewsCard = ({ feed, subtitle }) => {
       <Divider />
       <Example />
       <List>
+        {/* Uncomment below to see what happens when you don't use react-window */}
         {/* {feed.map((item, index) => (
           <ListItem key={index}>
             {item.avatar ? (
