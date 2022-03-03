@@ -16,6 +16,7 @@ This is a repo that teaches you how to perform React app optimization. The core 
 - Use case of BundlerAnalyzerPlugin (inside `webpack.config.js`)
 - Containerization of state within child component
   - We should manage the child component's internal state inside the component itself but not put it into the parent component. Otherwise, when the parent component is re-rendered, all of the child component will be re-rendered as well. Prioritize this approach before you try to use `React.Memo()`
+- Better profiling for Production build (inside `webpack.config.js`)
 
 ## Prerequisites
 
