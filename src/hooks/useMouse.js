@@ -1,26 +1,26 @@
 import { useState, useEffect } from "react";
 import debounce from "lodash/debounce";
 
-const customDebounceFunction = (func, delay) => {
-  let timeoutId;
-  return function (...args) {
-    if (timeoutId) {
-      clearTimeout(timeoutId);
-    }
-    timeoutId = setTimeout(() => func.apply(this, args), delay);
-  };
-};
+// const customDebounceFunction = (func, delay) => {
+//   let timeoutId;
+//   return function (...args) {
+//     if (timeoutId) {
+//       clearTimeout(timeoutId);
+//     }
+//     timeoutId = setTimeout(() => func.apply(this, args), delay);
+//   };
+// };
 
-const customDebounceFunction2 = (func, delay) => {
-  let timer;
-  return function () {
-    let args = arguments;
-    clearTimeout(timer);
-    timer = setTimeout(() => {
-      func.apply(this, args);
-    }, delay);
-  };
-};
+// const customDebounceFunction2 = (func, delay) => {
+//   let timer;
+//   return function () {
+//     let args = arguments;
+//     clearTimeout(timer);
+//     timer = setTimeout(() => {
+//       func.apply(this, args);
+//     }, delay);
+//   };
+// };
 
   
 
