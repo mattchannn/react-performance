@@ -1,5 +1,5 @@
 import { Header, NotificationCenter, Sidebar, Workspace } from "../components";
-import React, { useState } from "react";
+import React, { useState, Suspense } from "react";
 import { Route, Switch } from "react-router-dom";
 
 import FormatTextdirectionLToRIcon from "@material-ui/icons/FormatTextdirectionLToR";
@@ -104,6 +104,7 @@ const Dashboard = ({ history }) => {
 
   const getRoutes = (
     <Switch>
+      <Suspense fallback={<div>Loading..</div>}>
       {routes.items.map((item, index) => (
         <Route
           exact
@@ -113,6 +114,7 @@ const Dashboard = ({ history }) => {
           key={index}
         />
       ))}
+      </Suspense>
     </Switch>
   );
 

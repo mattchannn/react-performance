@@ -12,6 +12,7 @@ import Typography from "@material-ui/core/Typography";
 import classNames from "classnames";
 import { formatPrice } from "../../helpers";
 import { makeStyles } from "@material-ui/core/styles";
+// import '../../pages/wdyr'
 
 const useStyles = makeStyles((theme) => ({
   mediaGrid: {

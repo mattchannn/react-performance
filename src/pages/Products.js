@@ -1,6 +1,6 @@
 import { ProductCard, Wrapper } from "../components";
 import React, { useEffect, useState } from "react";
-import "./wdyr";
+// import "./wdyr";
 import AppBar from "@material-ui/core/AppBar";
 import Grid from "@material-ui/core/Grid";
 import Hidden from "@material-ui/core/Hidden";
