@@ -79,7 +79,9 @@ const Products = () => {
   const [opened, setOpened] = useState(false);
   const [products, setProducts] = useState([]);
   const [buttonClicked, setButtonClicked] = useState(false);
-  const memoStyle = React.useMemo(() => ({ background: "red" }), []);
+  // use non-memo style if you would like to see the effect of WYDR
+  // const memoStyle = React.useMemo(() => ({ background: "red" }), []);
+  const memoStyle = { background: "red" };
   useEffect(() => {
     let mockProducts = [];
 

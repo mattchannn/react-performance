@@ -19,6 +19,8 @@ This is a repo that teaches you how to perform React app optimization. The core 
 - Better profiling for Production build (inside `webpack.config.js`)
 - React.useMemo()
   - page/Dashboard.js
+- What did you render package
+  - page/Product.js (memoStyle)
 
 ## Prerequisites
 
