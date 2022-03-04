@@ -52,6 +52,7 @@ const Home = () => {
   const duplicateItems = (arr, numberOfRepetitions) =>
     arr.flatMap((i) => Array.from({ length: numberOfRepetitions }).fill(i));
 
+  // Remove React.useMemo to see the effect
   const topProduct = React.useMemo(
     () => data.sort((a, b) => b.progress - a.progress)[0],
     []
